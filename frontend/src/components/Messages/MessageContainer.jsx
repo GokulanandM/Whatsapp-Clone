@@ -1,16 +1,16 @@
 import React from 'react'
 import NavbarMessages from '../NavbarMessages'
 import Messages from './Messages'
-import './msg.css'
 import MessageInput from './MessageInput'
 
 const MessageContainer = () => {
   const noChatSelected = false;
   return (
-    <div className='flex flex-col msg-container'>
+    <div className='flex flex-col w-[100vw]'>
      <>
     {noChatSelected ? (<NoChatSelected/>) :(
-     <> <NavbarMessages/>
+      <>
+      <NavbarMessages/>
       <Messages/>
       <MessageInput/></>
     ) }
