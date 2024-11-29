@@ -3,7 +3,7 @@ import useSendMessage from '../../hooks/useSendMessage';
 
 const MessageInput = () => {
   const [message,setMessage] = React.useState("");
-  const [loading,sendMessage] = useSendMessage()
+  const {sendMessage, loading} = useSendMessage()
   const handleSubmit = async (e) => {
     e.preventDefault();
     if(!message) return;
